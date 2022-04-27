@@ -9,6 +9,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+a, a:hover {
+    color: unset;
+    text-decoration: none;
+}
+
 :root {
     --color-red: #F03C42;
     --color-yellow: #FFF964;
@@ -24,17 +29,40 @@ header {
     height: 70px;
     align-items: center;
     display: flex;
+    padding: 0 15px;
 }
 
 nav h1 {
-    color: var(--color-black);
+    color: var(--color-yellow);
     font-size: 24px;
     text-align: center;
 }
 
+footer {
+    height: 120px;
+    background-color: var(--color-red);
+    color: var(--color-yellow);
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+/* Class e IDs */
+
 #pizzas {
-    padding: 20px 0;
+    padding: 20px 15px;
     background-color: var(--color-light-gray);
+}
+
+#comments {
+    padding: 20px 15px;
+}
+
+#comments h2 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--color-gray);
+    margin-bottom: 40px;
 }
 
 .container {
@@ -76,4 +104,25 @@ nav h1 {
 .pizza-card-descripion h4 {
     color: var(--color-green);
     font-size: 24px;
+}
+
+.card-comment {
+    background-color: var(--color-yellow);
+    color: var(--color-red);
+    border-radius: 12px;
+    padding: 25px 20px;
+    margin: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content a {
+    font-size: 16px;
+}
+
+.footer-content address {
+    font-size: 16px;
 }
