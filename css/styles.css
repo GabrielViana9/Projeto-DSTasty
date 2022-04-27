@@ -1,0 +1,79 @@
+/* Elements */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --color-red: #F03C42;
+    --color-yellow: #FFF964;
+    --color-green: #02B814;
+    --color-gray: #5E5E5E;
+    --color-light-gray: #E5E5E5;
+    --color-black: #000;
+    --color-white: #fff;
+}
+
+header {
+    background-color: var(--color-red);
+    height: 70px;
+    align-items: center;
+    display: flex;
+}
+
+nav h1 {
+    color: var(--color-black);
+    font-size: 24px;
+    text-align: center;
+}
+
+#pizzas {
+    padding: 20px 0;
+    background-color: var(--color-light-gray);
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.pizza-card {
+    display: flex;
+    margin: 20px 0;
+}
+
+.pizza-card img {
+    border-radius: 12px 0 0 12px;
+    width: 200px;
+    height: 200px;
+}
+
+.pizza-card-descripion {
+    background-color: var(--color-white);
+    border-radius: 0 12px 12px 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.pizza-card-descripion h3 {
+    color: var(--color-gray);
+    font-size: 24px;
+}
+
+.pizza-card-descripion p {
+    color: var(--color-gray);
+    font-size: 14px;
+}
+
+.pizza-card-descripion h4 {
+    color: var(--color-green);
+    font-size: 24px;
+}
